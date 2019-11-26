@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#008577</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_item_music">#292929</color>
+    <color name="color_item_music1">#00ffffff</color>
+    <color name="color_pressed_item_music">#BC333333</color>
+    <color name="color_favorites">#b41fff</color>
+    <color name="color_playlist">#933f03</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gray">#D8D8D8</color>
+</resources>

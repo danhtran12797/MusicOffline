@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        app:title="Mussic Offline"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layout_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_home"
+        android:background="@drawable/custom_background_activity_load">
+
+        <ImageView
+            android:id="@+id/imgLogo_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0.2"
+            android:padding="30dp"
+            android:src="@drawable/music_load_data" />
+
+        <Button
+            android:id="@+id/btnSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPlaylists"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:background="@drawable/selector_button_songs"
+            android:drawableLeft="@drawable/ic_library_music"
+            android:padding="10dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Songs"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnPlaylists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/selector_button_playlists"
+            android:drawableLeft="@drawable/ic_playlist_white"
+            android:padding="10dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Playlists"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnFav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPlaylists"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:background="@drawable/selector_button_favorites"
+            android:drawableLeft="@drawable/ic_favorite_white"
+            android:padding="10dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Favorites"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

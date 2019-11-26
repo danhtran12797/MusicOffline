@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vumeter="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/menu_song"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_more_vert"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <io.gresse.hugo.vumeterlibrary.VuMeterView
+        android:id="@+id/vumeter"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        vumeter:vumeter_backgroundColor="#33b5e5"
+        vumeter:vumeter_blockNumber="4"
+        vumeter:vumeter_blockSpacing="2dp"
+        vumeter:vumeter_speed="4"
+        vumeter:vumeter_startOff="true"
+        vumeter:vumeter_stopSize="5dp" />
+
+    <TextView
+        android:id="@+id/txtNameSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/vumeter"
+        android:layout_toLeftOf="@+id/menu_song"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Anh chang sao ma"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgLocal"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/txtNameSong"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/txtSinger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameSong"
+        android:layout_toLeftOf="@+id/menu_song"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgLocal"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Huong Tram"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>
