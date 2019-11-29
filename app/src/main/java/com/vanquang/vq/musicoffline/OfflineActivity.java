@@ -1,4 +1,4 @@
-package com.danhtran12797.thd.musicoffline;
+package com.vanquang.vq.musicoffline;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,9 +8,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -48,15 +46,15 @@ import java.util.Random;
 
 import me.relex.circleindicator.CircleIndicator;
 
-import static com.danhtran12797.thd.musicoffline.DiscFragment.objectAnimator;
-import static com.danhtran12797.thd.musicoffline.ListSongFragment.musicAdapter;
-import static com.danhtran12797.thd.musicoffline.ListSongFragment.recyclerView;
-import static com.danhtran12797.thd.musicoffline.MainActivity.KEY;
-import static com.danhtran12797.thd.musicoffline.MainActivity.KEY_FAVORITES;
-import static com.danhtran12797.thd.musicoffline.MainActivity.KEY_PLAYLISTS;
-import static com.danhtran12797.thd.musicoffline.MainActivity.KEY_SONGS;
-import static com.danhtran12797.thd.musicoffline.MainActivity.SHARED_PREFERENCES_NAME;
-import static com.danhtran12797.thd.musicoffline.MainActivity.arrSong;
+import static com.vanquang.vq.musicoffline.DiscFragment.objectAnimator;
+import static com.vanquang.vq.musicoffline.ListSongFragment.musicAdapter;
+import static com.vanquang.vq.musicoffline.ListSongFragment.recyclerView;
+import static com.vanquang.vq.musicoffline.MainActivity.KEY;
+import static com.vanquang.vq.musicoffline.MainActivity.KEY_FAVORITES;
+import static com.vanquang.vq.musicoffline.MainActivity.KEY_PLAYLISTS;
+import static com.vanquang.vq.musicoffline.MainActivity.KEY_SONGS;
+import static com.vanquang.vq.musicoffline.MainActivity.SHARED_PREFERENCES_NAME;
+import static com.vanquang.vq.musicoffline.MainActivity.arrSong;
 import static com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE;
 
 public class OfflineActivity extends AppCompatActivity implements View.OnClickListener

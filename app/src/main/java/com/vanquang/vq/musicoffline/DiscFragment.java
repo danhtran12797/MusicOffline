@@ -1,4 +1,4 @@
-package com.danhtran12797.thd.musicoffline;
+package com.vanquang.vq.musicoffline;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -19,7 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static com.danhtran12797.thd.musicoffline.OfflineActivity.KEY_LIST_SONG;
+import static com.vanquang.vq.musicoffline.OfflineActivity.KEY_LIST_SONG;
 
 public class DiscFragment extends Fragment {
     View view;

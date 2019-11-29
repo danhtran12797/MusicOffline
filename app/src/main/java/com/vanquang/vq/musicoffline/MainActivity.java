@@ -1,4 +1,4 @@
-package com.danhtran12797.thd.musicoffline;
+package com.vanquang.vq.musicoffline;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -271,22 +271,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         arrSong = new ArrayList<>();
 
-        // sắp xếp các file theo thời gian dc tải vào máy
-        Collections.sort(arrSong, new Comparator<Music>() {
-            @Override
-            public int compare(Music o1, Music o2) {
-                return compare(new File(o2.getPath()).lastModified(), new File(o1.getPath()).lastModified());
-            }
-
-            private int compare(long lastModified, long lastModified1) {
-                return (int) (lastModified - lastModified1);
-            }
-        });
-
         // đọc trực tiếp từ thư mục Zing MP3
         arrSong.addAll(getZingMP3(Environment.getExternalStorageDirectory() + "/Zing MP3"));
         // đọc tất cả các bài hát trong máy, kể cả thẻ nhớ, nhưng nó k đọc dc trong thư mục /Zing MP3(k hiểu tại sao)
         arrSong.addAll(scanDeviceForMp3Files());
+
+        // sắp xếp các file theo thời gian dc tải vào máy
+//        Collections.sort(arrSong, new Comparator<Music>() {
+//            @Override
+//            public int compare(Music o1, Music o2) {
+//                return compare(new File(o2.getPath()).lastModified(), new File(o1.getPath()).lastModified());
+//            }
+//
+//            private int compare(long lastModified, long lastModified1) {
+//                return (int) (lastModified - lastModified1);
+//            }
+//        });
 
         // chuỗi id fav
         if (fav.equals(""))

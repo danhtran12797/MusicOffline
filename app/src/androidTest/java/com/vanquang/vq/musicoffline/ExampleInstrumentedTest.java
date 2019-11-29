@@ -1,4 +1,4 @@
-package com.danhtran12797.thd.musicoffline;
+package com.vanquang.vq.musicoffline;
 
 import android.content.Context;
 

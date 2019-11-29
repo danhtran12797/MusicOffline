@@ -1,4 +1,4 @@
-package com.danhtran12797.thd.musicoffline;
+package com.vanquang.vq.musicoffline;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
-import static com.danhtran12797.thd.musicoffline.OfflineActivity.KEY_LIST_SONG;
+import static com.vanquang.vq.musicoffline.OfflineActivity.KEY_LIST_SONG;
 
 public class LyricFragment extends Fragment {
 

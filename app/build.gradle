@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.0"
     defaultConfig {
-        applicationId "com.danhtran12797.thd.musicoffline"
+        applicationId "com.vanquang.vq.musicoffline"
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1

@@ -1,4 +1,4 @@
-package com.danhtran12797.thd.musicoffline;
+package com.vanquang.vq.musicoffline;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -32,9 +32,9 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-import static com.danhtran12797.thd.musicoffline.OfflineActivity.KEY_LIST_SONG;
-import static com.danhtran12797.thd.musicoffline.OfflineActivity.arrMusic;
-import static com.danhtran12797.thd.musicoffline.OfflineActivity.delete_arrMusic_local;
+import static com.vanquang.vq.musicoffline.OfflineActivity.KEY_LIST_SONG;
+import static com.vanquang.vq.musicoffline.OfflineActivity.arrMusic;
+import static com.vanquang.vq.musicoffline.OfflineActivity.delete_arrMusic_local;
 
 public class ListSongFragment extends Fragment {
 
@@ -170,6 +170,7 @@ public class ListSongFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         File file = new File(music.getPath());
+                        Log.d("AAA", "path: "+music.getPath());
                         if (file.delete()) {
                             Toast.makeText(getContext(), "Đã xóa bài hát '" + music.getNameSong() + "' thành công", Toast.LENGTH_SHORT).show();
                             listener2.onInpuSent2(position);
