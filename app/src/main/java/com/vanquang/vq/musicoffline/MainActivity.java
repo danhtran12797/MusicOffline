@@ -30,8 +30,6 @@ import androidx.core.view.ViewPropertyAnimatorCompat;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -277,6 +275,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         arrSong.addAll(scanDeviceForMp3Files());
 
         // sắp xếp các file theo thời gian dc tải vào máy
+        // hàm này bị failed
 //        Collections.sort(arrSong, new Comparator<Music>() {
 //            @Override
 //            public int compare(Music o1, Music o2) {

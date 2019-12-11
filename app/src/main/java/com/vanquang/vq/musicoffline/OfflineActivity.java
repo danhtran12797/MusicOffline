@@ -100,8 +100,6 @@ public class OfflineActivity extends AppCompatActivity implements View.OnClickLi
     // thì sẽ save_preferent()
     private boolean check_change_share = false;
 
-    int cout_click = 0;
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,11 +136,9 @@ public class OfflineActivity extends AppCompatActivity implements View.OnClickLi
 
         ListSongFragment listSongFragment = ListSongFragment.newInstance(arrMusic);
         DiscFragment discFragment = new DiscFragment();
-        LyricFragment lyricFragment = new LyricFragment();
 
         viewPagerAdapter.addFragment(listSongFragment);
         viewPagerAdapter.addFragment(discFragment);
-        viewPagerAdapter.addFragment(lyricFragment);
 
         // vd: đang ở fragment 0 thì fragment 2 sẽ dc khởi tạo lại
         // nên không muốn cho nó khởi tạo lại
@@ -625,13 +621,6 @@ public class OfflineActivity extends AppCompatActivity implements View.OnClickLi
                 startPlayer();
             }
             return;
-        }
-
-        //String lyric_song= path_lyric_MP3+music.getId(); //đường dẫn lời nhạc zingmp3 bài hát hiện tại
-
-        Fragment fragment = viewPagerAdapter.getItem(2);
-        if (fragment instanceof LyricFragment) {
-            ((LyricFragment) fragment).add_lyric_song(getArrLyric(music.getId(), music));
         }
 
         mediaPlayer = new MediaPlayer();
